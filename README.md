@@ -36,4 +36,6 @@ This repository contains info about the collaborative project on European heatwa
 
 
 **Meeting Summaries**
+* [2022_08_05](https://docs.google.com/document/d/1eLhVIBYlDIeIwSVxXDPkn1ahWPNq4s43bBIwsrZ2c0A/edit)
+* [2022_08_19](https://docs.google.com/document/d/1kyXU9GH-CSaeEYUSKSKinRIRnop4iyVyNQrGNIHiqrU/edit)
 * [2022_11_11](https://docs.google.com/document/d/1jjp_Xvnm5Iyhgx3X7fQa-n9neDYs8umnw6UduITXFqw/edit)
