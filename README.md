@@ -3,7 +3,7 @@ This repository contains info about the collaborative project on European heatwa
 ### Data description
 | Parameter     | ERA5 data description |
 | ---      | ---       |
-| 2D Variables         |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC, LH, SH, Solar Rad, 10m UV winds|
+| 2D Variables         |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC(4 layers), LH, SH, Solar Rad, 10m UV winds|
 | 3D Variables         |    Geopotential(Z), Wind speed(U,V,omega), Cloud cover| 
 | Temporal resolution  |    hourly(for temp only), daily(for other vars)      |
 | Spatial resolution   |    0.25 degree |
