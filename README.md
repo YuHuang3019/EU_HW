@@ -30,7 +30,7 @@ This repository contains info about the collaborative project on European heatwa
 
 
 
-### Links to method source
+### Method source and useful links
 | Description | Links |
 | ---      | ---       |
 |Lagrangian trajectories                     | https://github.com/Novarizark/easy-era5-trck|
