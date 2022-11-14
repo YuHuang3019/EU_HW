@@ -23,7 +23,8 @@
 |localhw_detect_mp.py | Collect T2m_max in a centered N-day window from 1990-2022, get the 95%th percentile threshold and define local extremes based on it. Using multiprocess.|
 |time_series.py| Plot the temporal evolution of vars in three panels.|
 
-**Links to methods**
+**Links to method source**
 | Description | Links |
 | ---      | ---       |
 |Lagrangian method | https://github.com/Novarizark/easy-era5-trck|
+|Eulerian method | https://www.nature.com/articles/s43247-020-00048-9.pdf|
