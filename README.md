@@ -1,4 +1,4 @@
-This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
+### This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
 
 **ERA5 Data description**
 | Parameter     | Description |
