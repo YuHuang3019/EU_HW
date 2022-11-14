@@ -1,6 +1,6 @@
+This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
 
 **Data description**
-
 | Parameter     | Description |
 | ---      | ---       |
 | 2D Variables         |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC, LH, SH, Solar Rad, 10m UV winds|
@@ -22,6 +22,8 @@
 |era5_download.py  | Download ERA5 data at hourly resolution (and extract the min, mean, max).|
 |localhw_detect_mp.py | Collect T2m_max in a centered N-day window from 1990-2022, get the 95%th percentile threshold and define local extremes based on it. Using multiprocess.|
 |time_series.py| Plot the temporal evolution of vars in three panels.|
+
+
 
 **Links to method source**
 | Description | Links |
