@@ -3,8 +3,6 @@ import argparse
 from urllib.request import urlopen
 import os
 import glob
-import sklearn
-import pywt
 import time
 import datetime
 import random
@@ -14,7 +12,6 @@ import itertools
 warnings.simplefilter(action='ignore')
 #import dask.array as da
 #from dask.distributed import Client
-import scipy.stats
 import xarray as xr
 import numpy as np
 import pandas as pd
