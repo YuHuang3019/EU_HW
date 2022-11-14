@@ -19,5 +19,5 @@
 **Scripts description**
 | Scripts     | Description |
 | ---      | ---       |
-|hw_download.py  | Downloading ERA5 data at hourly resolution (and extract the min, mean, max)|
+|hw_download.py  | Downloading ERA5 data at hourly resolution (and extract the min, mean, max), using multiprocessing of python|
 
