@@ -10,7 +10,8 @@ This repository contains info about the collaborative project on European heatwa
 | 3D Download URL         |   https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview|
 | 3D Avaliable downloaded |   /burg/glab/users/yh3019/era5_daily  |
 | Temporal resolution  |    hourly(for temp only), daily(for other vars)      |
-| Spatial resolution   |    0.25 degree |
+| Horizontal resolution   |    0.25 degree |
+| Vertical resolution(3D only)   | 25hPa |
 | Temporal coverage    |    1990-2022, MJJA  |
 | Spatial coverage     |    [15N, 70N], [150W, 40E]                 |
 
