@@ -32,3 +32,8 @@ This repository contains info about the collaborative project on European heatwa
 |Lagrangian trajectories                     | https://github.com/Novarizark/easy-era5-trck|
 |Eulerian decomposition                      | https://www.nature.com/articles/s43247-020-00048-9.pdf|
 |Dry static energy convergence decomposition | https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021AV000619
+
+
+
+**Meeting Summaries**
+* [2022_11_11](https://docs.google.com/document/d/1jjp_Xvnm5Iyhgx3X7fQa-n9neDYs8umnw6UduITXFqw/edit)
