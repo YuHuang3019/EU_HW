@@ -1,18 +1,20 @@
 This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
 
-### Data description
-| Parameter     | ERA5 data description |
+### ERA5 Data description
+|          |  |
 | ---      | ---       |
-| 2D Variables         |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC(4 layers), LH, SH, Solar Rad, 10m UV winds|
-| 3D Variables         |    Geopotential(Z), Wind speed(U,V,omega), Cloud cover| 
+| 2D Variables        |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC(4 layers), LH, SH, Solar Rad, 10m UV winds|
+| 2D Download URL         |    https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview|
+| 2D Avaliable downloaded |    /burg/glab/users/yh3019/era5_raw <br /> /burg/glab/users/yh3019/era5_daily |
+| 3D Variables         | Geopotential(Z), Wind speed(U,V,omega), Cloud cover| 
+| 3D Download URL         |   https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview|
+| 3D Avaliable downloaded |   /burg/glab/users/yh3019/era5_daily  |
 | Temporal resolution  |    hourly(for temp only), daily(for other vars)      |
 | Spatial resolution   |    0.25 degree |
 | Temporal coverage    |    1990-2022, MJJA  |
 | Spatial coverage     |    [15N, 70N], [150W, 40E]                 |
-| Projection           |    EU Heatwave          |
-| Download URL         |    https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset|
-| Avaliable downloaded |    /burg/glab/users/yh3019/era5_raw  |
-| File format          |    netcdf                 |
+
+
 
 ***For SMAP data, please see https://github.com/os2328/GlabData/tree/main/data_cards***
 
