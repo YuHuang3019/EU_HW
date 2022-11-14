@@ -37,6 +37,7 @@ This repository contains info about the collaborative project on European heatwa
 |Eulerian decomposition                      | https://www.nature.com/articles/s43247-020-00048-9.pdf|
 |Dry static energy convergence decomposition | https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021AV000619|
 |Tracking heatwaves                          | https://www.sciencedirect.com/science/article/pii/S221209471930060X?via%3Dihub   <br /> https://iopscience.iop.org/article/10.1088/1748-9326/7/1/014023/meta|
+|ERA5 download                               | https://towardsdatascience.com/read-era5-directly-into-memory-with-python-511a2740bba0|
 
 
 
