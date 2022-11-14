@@ -1,6 +1,6 @@
-### This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
+This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
 
-**ERA5 Data description**
+### ERA5 Data description
 | Parameter     | Description |
 | ---      | ---       |
 | 2D Variables         |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC, LH, SH, Solar Rad, 10m UV winds|
@@ -14,10 +14,10 @@
 | Avaliable downloaded |    /burg/glab/users/yh3019/era5_raw  |
 | File format          |    netcdf                 |
 
-* For SMAP data, please see https://github.com/os2328/GlabData/tree/main/data_cards
+***For SMAP data, please see https://github.com/os2328/GlabData/tree/main/data_cards***
 
 
-**Scripts description**
+### Scripts description
 | Scripts     | Description |
 | ---      | ---       |
 |era5_download.py       | Download ERA5 data at hourly resolution (and extract the min, mean, max).|
@@ -26,7 +26,7 @@
 
 
 
-**Links to method source**
+### Links to method source
 | Description | Links |
 | ---      | ---       |
 |Lagrangian trajectories                     | https://github.com/Novarizark/easy-era5-trck|
@@ -35,7 +35,7 @@
 
 
 
-**Meeting Summaries**
+### Meeting Summaries
 * [2022_08_05](https://docs.google.com/document/d/1eLhVIBYlDIeIwSVxXDPkn1ahWPNq4s43bBIwsrZ2c0A/edit)
 * [2022_08_19](https://docs.google.com/document/d/1kyXU9GH-CSaeEYUSKSKinRIRnop4iyVyNQrGNIHiqrU/edit)
 * [2022_11_11](https://docs.google.com/document/d/1jjp_Xvnm5Iyhgx3X7fQa-n9neDYs8umnw6UduITXFqw/edit)
