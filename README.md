@@ -29,5 +29,6 @@ This repository contains info about the collaborative project on European heatwa
 **Links to method source**
 | Description | Links |
 | ---      | ---       |
-|Lagrangian method | https://github.com/Novarizark/easy-era5-trck|
-|Eulerian method   | https://www.nature.com/articles/s43247-020-00048-9.pdf|
+|Lagrangian trajectories                     | https://github.com/Novarizark/easy-era5-trck|
+|Eulerian decomposition                      | https://www.nature.com/articles/s43247-020-00048-9.pdf|
+|Dry static energy convergence decomposition | https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021AV000619
