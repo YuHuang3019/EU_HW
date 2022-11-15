@@ -1,7 +1,7 @@
 This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
 
-### ERA5 Data description
-| Parameter         | Description |
+### Data description
+| ERA5          | Description |
 | ---      | ---       |
 | 2D Variables        |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC(4 layers), LH, SH, Solar Rad, 10m UV winds|
 | 2D Download URL         |    https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview|
