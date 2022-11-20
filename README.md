@@ -37,7 +37,7 @@ This repository contains info about the collaborative project on European heatwa
 [^_^]: ![Complete HW detection algorithm](images/hw_detect.png) 
 <p align="center">
   <img src="./images/hw_detect.png" width="500" />
-  <em>Complete HW detection algorithm</em>
+  <em>Fig 1. Complete HW detection algorithm</em>
 </p>
 
 
