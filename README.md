@@ -31,7 +31,8 @@ We mainly use ERA5 data in this project. SMAP data is used to validate the soil 
 
 
 ### Scripts description
-Below lists scripts that are used to process and analyze data for this project. The codes from Yu can be run on Ginsburg with necessary packages installed.
+Below lists scripts that are used to process and analyze data for this project. 
+[^_^]: The codes from Yu can be run on Ginsburg with necessary packages installed.
 
 | Scripts     | Description |
 | ---      | ---       |
@@ -52,7 +53,7 @@ Below lists scripts that are used to process and analyze data for this project. 
 </p>
 
 ### Links to method source
-Here are links to the original papers or github repositories which we mainly refer in this work.
+Here are links to the original papers or github repositories which we mainly refer to in this work.
 
 | Description | Links |
 | ---      | ---       |
