@@ -32,9 +32,9 @@ This repository contains info about the collaborative project on European heatwa
 |plot_ts_map.py                   | Plot the temporal evolution of variables in three panels; plot maps of soil moisture, temp and wind speed contours.|
 |eulerian_calc.py                      | Process Eulerian decomposition and plot the relative contributions.|
 
-!["Complete HW detection algorithm!" 800x500](images/hw_detect.png)
+[^_^]: !["Complete HW detection algorithm!" 800x500](images/hw_detect.png)
 
-[^_^]: ( ![Complete HW detection algorithm](images/hw_detect.png) )
+[^_^]: ![Complete HW detection algorithm](images/hw_detect.png) 
 <p align="center">
   <img src="./images/hw_detect.png" width="500" />
   <em>Complete HW detection algorithm</em>
