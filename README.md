@@ -3,7 +3,7 @@ This repository contains info about the collaborative project on European heatwa
 
 
 ### Data description
-We mainly use ERA5 data in this project. SMAP data is used to validate the soil moisture from ERA5 to confirm that its trend and spatial pattern is right. 
+We mainly use ERA5 data in this project. SMAP data is used to validate the soil moisture from ERA5 to confirm that its trend and spatial pattern are right. 
 
 | ERA5          | Description |
 | ---      | ---       |
