@@ -3,6 +3,8 @@ This repository contains info about the collaborative project on European heatwa
 
 
 ### Data description
+We mainly use ERA5 data in this project. SMAP data is used to validate the soil moisture from ERA5 to confirm that its trend and spatial pattern is right. 
+
 | ERA5          | Description |
 | ---      | ---       |
 | 2D Variables        |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC(4 layers), LH, SH, Solar Rad, 10m UV winds|
@@ -23,10 +25,13 @@ This repository contains info about the collaborative project on European heatwa
 | ---      | ---       |
 | Avaliable downloaded | https://github.com/os2328/GlabData/tree/main/data_cards       |
 
-
+[^_^]: |CSIF      | Description |
+[^_^]: | ---      | ---       |
+[^_^]: | Avaliable downloaded |      |
 
 
 ### Scripts description
+
 | Scripts     | Description |
 | ---      | ---       |
 |era5_download_dailymean.py       | Download ERA5 data at hourly resolution (and extract the daily-scale min, mean, max). Based on [this](https://towardsdatascience.com/read-era5-directly-into-memory-with-python-511a2740bba0).|
@@ -46,6 +51,8 @@ This repository contains info about the collaborative project on European heatwa
 </p>
 
 ### Links to method source
+Here are links to the original papers or github repositories which we mainly refer in this work.
+
 | Description | Links |
 | ---      | ---       |
 |Lagrangian trajectories                     | https://github.com/Novarizark/easy-era5-trck|
