@@ -26,7 +26,7 @@ This repository contains info about the collaborative project on European heatwa
 ### Scripts description
 | Scripts     | Description |
 | ---      | ---       |
-|era5_download_dailymean.py       | Download ERA5 data at hourly resolution (and extract the min, mean, max). Based on [this](https://towardsdatascience.com/read-era5-directly-into-memory-with-python-511a2740bba0).|
+|era5_download_dailymean.py       | Download ERA5 data at hourly resolution (and extract the daily-scale min, mean, max). Based on [this](https://towardsdatascience.com/read-era5-directly-into-memory-with-python-511a2740bba0).|
 |localhw_detect_mp.py             | Collect T2m_max in a centered N-day window from 1990-2022, get the 95%th percentile threshold and define local extremes based on it. Using multiprocess.  |
 |time_series.py                   | Plot the temporal evolution of vars in three panels.|
 |eulerian.py                      | Process Eulerian decomposition and plot the relative contributions.|
