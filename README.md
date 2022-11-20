@@ -16,7 +16,8 @@ This repository contains info about the collaborative project on European heatwa
 | Temporal coverage    |    1990-2022, MJJA  |
 | Spatial coverage     |    [15N, 70N], [150W, 40E]                 |
 | Vertical coverage(3D only)  |    [500hPa, 1000hPa]                 |
-| ---      | ---       |
+
+
 | SMAP                 | Description |
 | ---      | ---       |
 | Avaliable downloaded | https://github.com/os2328/GlabData/tree/main/data_cards       |
