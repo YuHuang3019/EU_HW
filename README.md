@@ -11,7 +11,7 @@ This repository contains info about the collaborative project on European heatwa
 | 3D Avaliable downloaded |   /burg/glab/users/yh3019/era5_daily  |
 | Temporal resolution  |    hourly(for temp only), daily(for other vars)      |
 | Horizontal resolution   |    0.25 degree |
-| Vertical resolution(3D only)   | 50 hPa (original dataset has different vertical resolution) |
+| Vertical resolution(3D only)   | 50 hPa (original dataset has different vertical resolutions) |
 | Temporal coverage    |    1990-2022, MJJA  |
 | Spatial coverage     |    [15N, 70N], [150W, 40E]                 |
 | Vertical coverage(3D only)  |    [500hPa, 1000hPa]                 |
