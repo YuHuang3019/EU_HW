@@ -1,6 +1,6 @@
 This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
 
-## Data 
+
 ### Data description
 | ERA5          | Description |
 | ---      | ---       |
@@ -17,6 +17,8 @@ This repository contains info about the collaborative project on European heatwa
 | Spatial coverage     |    [15N, 70N], [150W, 40E]                 |
 | Vertical coverage(3D only)  |    [500hPa, 1000hPa]                 |
 
+
+
 | SMAP                 | Description |
 | ---      | ---       |
 | Avaliable downloaded | https://github.com/os2328/GlabData/tree/main/data_cards       |
@@ -24,7 +26,6 @@ This repository contains info about the collaborative project on European heatwa
 
 
 
-## Scripts 
 ### Scripts description
 | Scripts     | Description |
 | ---      | ---       |
@@ -35,8 +36,8 @@ This repository contains info about the collaborative project on European heatwa
 |eulerian_calc.py                      | Process Eulerian decomposition and plot the relative contributions.|
 
 [^_^]: !["Complete HW detection algorithm!" 800x500](images/hw_detect.png)
-
 [^_^]: ![Complete HW detection algorithm](images/hw_detect.png) 
+
 <p align="center">
   <img src="./images/hw_detect.png" width="500" />
 </p>
@@ -54,7 +55,7 @@ This repository contains info about the collaborative project on European heatwa
 
 
 
-## Meeting Summaries
+### Meeting Summaries
 * [2022_08_05](https://docs.google.com/document/d/1eLhVIBYlDIeIwSVxXDPkn1ahWPNq4s43bBIwsrZ2c0A/edit)
 * [2022_08_19](https://docs.google.com/document/d/1kyXU9GH-CSaeEYUSKSKinRIRnop4iyVyNQrGNIHiqrU/edit)
 * [2022_11_11](https://docs.google.com/document/d/1jjp_Xvnm5Iyhgx3X7fQa-n9neDYs8umnw6UduITXFqw/edit)
