@@ -6,14 +6,15 @@ This repository contains info about the collaborative project on European heatwa
 | 2D Variables        |    T2m, Ts, Precip, Evapor, Potential Evapor, SWC(4 layers), LH, SH, Solar Rad, 10m UV winds|
 | 2D Download URL         |    https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview|
 | 2D Avaliable downloaded |    Temp: /burg/glab/users/yh3019/era5_hourly <br /> Other: /burg/glab/users/yh3019/era5_daily |
-| 3D Variables         | T, Geopotential(Z), Wind speed(U,V,omega), Cloud cover| 
+| 3D Variables         | T, Geopotential(Z), Wind speed(U,V,omega), Cloud cover, Relative humidity, Specific humidity| 
 | 3D Download URL         |   https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview|
 | 3D Avaliable downloaded |   /burg/glab/users/yh3019/era5_daily  |
 | Temporal resolution  |    hourly(for temp only), daily(for other vars)      |
 | Horizontal resolution   |    0.25 degree |
-| Vertical resolution(3D only)   | 25 hPa |
+| Vertical resolution(3D only)   | 50 hPa (original dataset has different vertical resolution) |
 | Temporal coverage    |    1990-2022, MJJA  |
 | Spatial coverage     |    [15N, 70N], [150W, 40E]                 |
+| Vertical coverage(3D only)  |    [500hPa, 1000hPa]                 |
 
 | SMAP                 | Description |
 | ---      | ---       |
