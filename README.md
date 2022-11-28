@@ -49,7 +49,7 @@ Below lists scripts that are used to process and analyze data for this project.
   <img src="./images/hw-detect.png" width="500" />
 </p>
 <p align="center">
-  <em>Fig 1. Complete HW detection algorithm</em>
+  <em>Fig 1. Complete HW detection algorithm [reference](https://www.sciencedirect.com/science/article/pii/S221209471930060X?via%3Dihub)</em>
 </p>
 
 ### Links to method source
