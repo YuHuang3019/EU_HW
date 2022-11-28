@@ -10,7 +10,7 @@ We mainly use ERA5 data in this project. SMAP data is used to validate the soil 
 | 2D Variables        |    T2m, T_2m_dew, Ts, Precip, Evapor, Potential Evapor, SWC(4 layers), LH, SH, Solar Rad, 10m UV winds, Cloud Cover|
 | 2D Download URL         |    https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview|
 | 2D Avaliable downloaded |    Temp: /burg/glab/users/yh3019/era5_hourly <br /> Other: /burg/glab/users/yh3019/era5_daily |
-| 3D Variables         | T, Geopotential(Z), Wind speed(U,V,omega), Cloud cover, Relative humidity, Specific humidity| 
+| 3D Variables         | T, Geopotential(Z), Wind speed(U,V,omega), Relative humidity, Specific humidity| 
 | 3D Download URL         |   https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-pressure-levels?tab=overview|
 | 3D Avaliable downloaded |   /burg/glab/users/yh3019/era5_daily  |
 | Temporal resolution  |    hourly(for temp only), daily(for other vars)      |
