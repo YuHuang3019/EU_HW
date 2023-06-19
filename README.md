@@ -37,8 +37,8 @@ Below lists scripts that are used to process and analyze data for this project.
 | Scripts     | Description |
 | ---      | ---       |
 |era5_download_dailymean.py       | Download ERA5 data at hourly resolution (and extract the daily-scale min, mean, max). Based on [this](https://towardsdatascience.com/read-era5-directly-into-memory-with-python-511a2740bba0).|
-|localhw_detect_mp.py             | Collect T2m_max in a centered N-day window from 1990-2022, get the 95%th percentile threshold and define local extremes based on it. Using multiprocess.  |
-|track_hw_con.py             | Identify temporally consecutive (and spatially continuous) heatwave events (see the below flowchart for complete conceptual hw detection algorithm; the code is not complete, the thresholds used in this pratice may be different) [reference](https://www.sciencedirect.com/science/article/pii/S221209471930060X?via%3Dihub).  |
+|calc_threshold.py             | Collect T2m_max in a centered N-day window from 1990-2022, get the 95%th percentile threshold and define local extremes based on it. Using multiprocess.  |
+|hw_detectracker.py             | Identify temporally consecutive (and spatially continuous) heatwave events (see the below flowchart for complete conceptual hw detection algorithm; the code is not complete, the thresholds used in this pratice may be different) [reference](https://www.sciencedirect.com/science/article/pii/S221209471930060X?via%3Dihub).  |
 [^_^]:|plot_ts_map.py                   | Plot the temporal evolution of variables in three panels; plot maps of soil moisture, temp and wind speed contours.|
 [^_^]:|eulerian_calc.py                      | Process Eulerian decomposition and plot the relative contributions.|
 
