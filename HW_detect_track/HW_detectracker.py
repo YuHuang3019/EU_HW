@@ -1,4 +1,8 @@
+import numpy as np
+import math
+    
 class HeatwaveTracker:
+
     def __init__(self, yr, all_lat, all_lon, T, thres, s, N, M, L, overlap_threshold, consecutive_days):
         """
         Initialize HeatwaveTracker object.
@@ -14,7 +18,9 @@ class HeatwaveTracker:
         - overlap_threshold: float overlap threshold (in terms of area or indicies) for two heatwave events on consecutive days to be considered the same event.
         - consecutive_days: the minimum lasting duration of one heatwave event.
         """
+        
         # all_lat, all_lon, T, thres, s, N, M, L, overlap_threshold, consecutive_days = glb.hyperparams
+        self.yr = yr
         self.T = T
         self.thres = thres
         self.all_lat = all_lat
@@ -47,6 +53,7 @@ class HeatwaveTracker:
         - self.current_hot_indice
         
         """
+        
         # Generate boolean mask of hot pixels for current day
         hot_pixels = self.T[day] > self.thres[day] # np.where(self.T[day] > self.thres[day], 1, 0)
         hot_indicies = np.arange(0, hot_pixels.shape[0]*hot_pixels.shape[1]).reshape([hot_pixels.shape[0],hot_pixels.shape[1]])
@@ -57,8 +64,8 @@ class HeatwaveTracker:
         for i in range(self.T.shape[1]-15):
             for j in range(self.T.shape[2]-15):
                 # Check if sliding window contains enough hot pixels to be considered as a non-anomalies event
-                if hot_pixels[i:i+s, j:j+s].sum() >= self.N:
-                    tmp_new_hot_indice = hot_indicies[i:i+s, j:j+s].reshape(-1)
+                if hot_pixels[i:i+self.s, j:j+self.s].sum() >= self.N:
+                    tmp_new_hot_indice = hot_indicies[i:i+self.s, j:j+self.s].reshape(-1)
                     new_hot_indice = np.unique(np.append(new_hot_indice, tmp_new_hot_indice))            
             
         new_hot_indice = new_hot_indice[new_hot_indice != 0]
@@ -66,11 +73,11 @@ class HeatwaveTracker:
         # Set a minimum total hot pixel coverage area - about the area of 1/2 France
         if (len(new_hot_indice) > self.M):
             #calculate the center location, mean and max T values
-            clat = np.mean(all_lat[np.isin(hot_indicies, new_hot_indice)])
-            clon = np.mean(all_lon[np.isin(hot_indicies, new_hot_indice)])
+            clat = np.mean(self.all_lat[np.isin(hot_indicies, new_hot_indice)])
+            clon = np.mean(self.all_lon[np.isin(hot_indicies, new_hot_indice)])
         
-            meanT = np.mean(T[day][np.isin(hot_indicies, new_hot_indice)])
-            maxT = np.max(T[day][np.isin(hot_indicies, new_hot_indice)])
+            meanT = np.mean(self.T[day][np.isin(hot_indicies, new_hot_indice)])
+            maxT = np.max(self.T[day][np.isin(hot_indicies, new_hot_indice)])
             
             self.current_center[day] = (clat, clon)
             self.current_intensity[day] = meanT, maxT
@@ -79,6 +86,18 @@ class HeatwaveTracker:
     
     
     def _satis_distance_or_overlap_criteria(self, end_day, day):
+        """
+        Process each single day of temperature data to detect hot pixels and remove isolated/sparse hot anomalies.
+        
+        Args:
+        - end_day: last day of the current hw event
+        - day: the new day to be processed
+        
+        Outputs:
+        - Boolean value to identify if two days are consecutive in the same hw event
+        
+        """
+        
         # For day and day+1, calculate the center distance
         R = 6371.0  # Approximate radius of earth in km
         lat1, lon1  = self.current_center[end_day]
@@ -102,7 +121,7 @@ class HeatwaveTracker:
         overlap_ratio = float(len(overlap) / smaller_set)
            
         # Meetinge one criteria would be enough
-        if (overlap_ratio >= self.overlap_threshold) or (distance <= L):
+        if (overlap_ratio >= self.overlap_threshold) or (distance <= self.L):
             return True
         else:
             return False
@@ -110,6 +129,15 @@ class HeatwaveTracker:
                                   
                     
     def _merge_events(self, ):
+        """
+        Merge consecutive days in the same hw event
+        
+        Returns:
+        - self.events: dictionary containing all heatwave events
+                      with keys as event IDs and values as dictionaries containing 
+                      duration, start day, end day.
+        """
+        
         # For one hw event, the starting and ending day
         start_day = 0
         end_day = 0
@@ -151,7 +179,7 @@ class HeatwaveTracker:
             
             # For the ended event, check if the hw duration is larger than the minimum required length
             if (duration > 0) and (not current_event):
-                if duration >= 3:
+                if duration >= self.consecutive_days:
                     current_event_id += 1
                     self.events[current_event_id] = {'start_day': start_day, 'end_day': end_day, 'duration': duration} 
                 
@@ -169,12 +197,10 @@ class HeatwaveTracker:
         Detect heatwave events and track their movement across days.
         
         Returns:
-        - events: dictionary containing all heatwave events
-                  with keys as event IDs and values as dictionaries containing 
-                  duration, start day, end day.
+        - yr_events: dictionary containing all heatwave events
+                      with keys as year and values as dictionaries containing 
+                      duration, start day, end day, center location and intensity.
         """
-        if __name__ == '__detect_heatwaves__':
-              main()
         
         # Process each day to select hot pixels and remove the sparse isolated anomalies
         for day in range(self.T.shape[0]):
@@ -191,14 +217,14 @@ class HeatwaveTracker:
         
             # Load pickle module and save the dictionary events         
             import pickle
-            with open('/burg/glab/users/yh3019/csv/hw'+yr+'.pkl', "wb") as fp:
+            with open('/burg/glab/users/yh3019/csv/hw'+self.yr+'.pkl', "wb") as fp:
                 pickle.dump(self.events, fp)  
-                print(yr, ': HW event dictionary saved successfully to file')
+                print(self.yr, ': HW event dictionary saved successfully to file')
         else:
-            print(yr, ': No non-isolated hot pixels detected')
+            print(self.yr, ': No non-isolated hot pixels detected')
             
         # When returning, save the whole dictionary as the value to the year id (key is the str year) 
-        yr_events = {yr: self.events}
+        yr_events = {self.yr: self.events}
         return yr_events
     
      
