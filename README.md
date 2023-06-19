@@ -46,7 +46,7 @@ Below lists scripts that are used to process and analyze data for this project.
 [^_^]: ![Complete HW detection algorithm](images/hw_detect.png) 
 
 <p align="center">
-  <img src="./images/hw-detect.png" width="500" />
+  <img src="./images/hw_detect_track.png" width="500" />
 </p>
 <p align="center">
   <em>Fig 1. Complete HW detection algorithm </em>
