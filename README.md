@@ -43,7 +43,7 @@ Below lists scripts that are used to process and analyze data for this project.
 [^_^]:|eulerian_calc.py                      | Process Eulerian decomposition and plot the relative contributions.|
 
 [^_^]: !["Complete HW detection algorithm!" 800x500](images/HW_detect_track.png)
-[^_^]: ![Complete HW detection algorithm](images/hw_detect.png) 
+[^_^]: ![Complete HW detection algorithm](images/HW_detect_track.png) 
 
 <p align="center">
   <img src="./images/hw_detect_track.png" width="500" />
