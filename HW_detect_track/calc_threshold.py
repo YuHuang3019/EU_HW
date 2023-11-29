@@ -1,3 +1,5 @@
+# Using T at 850hPa as an example, in practice, the target is 2m height air temperature 
+
 import cdsapi
 import argparse
 from urllib.request import urlopen
