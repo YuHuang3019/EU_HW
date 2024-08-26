@@ -1,4 +1,4 @@
-# 2022 European Heatwave
+# European Heatwave
 This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
 
 
