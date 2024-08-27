@@ -1,10 +1,9 @@
-# European Heatwave
-This repository contains info about the collaborative project on European heatwave in Prof Gentine's lab.
+# European Heatwaves
+This repository contains info about the collaborative project on Western European heatwaves in Prof Gentine's lab.
 
 
 ### Data description
-We mainly use ERA5 data in this project. SMAP data is used to validate the soil moisture from ERA5 to confirm that its trend and spatial pattern are right. 
-New: found ERA5 data available here: https://docs.dkrz.de/doc/dataservices/finding_and_accessing_data/era_data/index.html
+We mainly use ERA5 data in this project. 
 
 | ERA5          | Description |
 | ---      | ---       |
@@ -20,15 +19,6 @@ New: found ERA5 data available here: https://docs.dkrz.de/doc/dataservices/findi
 | Temporal coverage    |    1990-2022, MJJA  |
 | Spatial coverage     |    [15N, 70N], [150W, 40E]                 |
 | Vertical coverage(3D only)  |    500hPa, 700hPa, 850hPa, 1000hPa                 |
-
-
-| SMAP                 | Description |
-| ---      | ---       |
-| Avaliable downloaded | https://github.com/os2328/GlabData/tree/main/data_cards       |
-
-[^_^]: |CSIF      | Description |
-[^_^]: | ---      | ---       |
-[^_^]: | Avaliable downloaded |      |
 
 
 ### Scripts description
@@ -47,25 +37,8 @@ Below lists scripts that are used to process and analyze data for this project.
 [^_^]: ![Complete HW detection algorithm](images/HW_detect_track.png) 
 
 <p align="center">
-  <img src="./images/HW_detect_track.png" width="500" />
+  <a href="./images/detect_flowchart.pdf">View the PDF file</a>
 </p>
 <p align="center">
-  <em>Fig 1. Complete HW detection algorithm </em>
+  <em>Fig 1. Complete HW detection algorithm</em>
 </p>
-
-### Links to method source
-Here are links to the original papers or github repositories which we mainly refer to in this work.
-
-| Description | Links |
-| ---      | ---       |
-|Lagrangian trajectories                     | https://github.com/Novarizark/easy-era5-trck|
-|Eulerian decomposition                      | https://www.nature.com/articles/s43247-020-00048-9.pdf|
-|Dry static energy convergence decomposition | https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2021AV000619|
-|Tracking heatwaves                          | https://www.sciencedirect.com/science/article/pii/S221209471930060X?via%3Dihub   <br /> https://iopscience.iop.org/article/10.1088/1748-9326/7/1/014023/meta|
-
-
-
-### Meeting Summaries
-* [2022_08_05](https://docs.google.com/document/d/1eLhVIBYlDIeIwSVxXDPkn1ahWPNq4s43bBIwsrZ2c0A/edit)
-* [2022_08_19](https://docs.google.com/document/d/1kyXU9GH-CSaeEYUSKSKinRIRnop4iyVyNQrGNIHiqrU/edit)
-* [2022_11_11](https://docs.google.com/document/d/1jjp_Xvnm5Iyhgx3X7fQa-n9neDYs8umnw6UduITXFqw/edit)
