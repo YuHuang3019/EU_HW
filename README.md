@@ -37,8 +37,8 @@ Below lists scripts that are used to process and analyze data for this project.
 [^_^]: ![Complete HW detection algorithm](images/HW_detect_track.png) 
 
 <p align="center">
-  <a href="./images/detect_flowchart.pdf">View the PDF file</a>
+  <img src="./images/HW_detect_track.png" width="500" />
 </p>
 <p align="center">
-  <em>Fig 1. Complete HW detection algorithm</em>
+  <em>Fig 1. Complete HW detection algorithm </em>
 </p>
